@@ -1,0 +1,42 @@
+{
+  "name": "knowabunga-2018",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "apollo-boost": "0.1.6",
+    "apollo-link-schema": "1.1.0",
+    "bootstrap": "3.3.7",
+    "graphql": "0.13.2",
+    "graphql-tag": "2.9.2",
+    "graphql-tools": "3.0.1",
+    "lodash": "4.17.10",
+    "react": "16.3.2",
+    "react-apollo": "2.1.4",
+    "react-bootstrap": "0.32.1",
+    "react-dom": "16.3.2",
+    "react-router": "3.2.1",
+    "recompose": "0.27.0"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "precommit": "lint-staged",
+    "prettify": "prettier --write \"src/**/*.{js,jsx,json,css}\"",
+    "start": "react-scripts start",
+    "test": "react-scripts test --env=jsdom",
+    "start-api-server": "json-server --port 3001 --watch data/index.js --delay 500",
+    "start-app-server": "react-scripts start"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "husky": "0.14.3",
+    "json-server": "0.12.2",
+    "lint-staged": "7.1.2",
+    "prettier": "1.12.1",
+    "react-scripts": "1.1.4"
+  }
+}

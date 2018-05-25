@@ -1,0 +1,71 @@
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	animation: App-logo-spin infinite 20s linear;
+	height: 80px;
+}
+
+.App-header {
+	background-color: #222;
+	height: 150px;
+	padding: 20px;
+	color: white;
+}
+
+.App-title {
+	font-size: 1.5em;
+}
+
+.App-intro {
+	font-size: large;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+table th,
+table td {
+	padding: 0.5em;
+}
+
+.form-page {
+	margin: 0 auto;
+	width: 50%;
+	min-width: 290px;
+	font-size: larger;
+}
+
+.form-paragraph + .form-paragraph {
+	margin-top: 1em;
+}
+
+.form-paragraph input[type='text'],
+.form-paragraph input[type='email'] {
+	width: 100%;
+}
+
+.form-paragraph input[type='text']:read-only,
+.form-paragraph input[type='email']:read-only {
+	background-color: whitesmoke;
+}
+
+.form-button {
+	background-color: #fff;
+	border-color: #ccc;
+	border-radius: 0.5em;
+	color: #333;
+	padding: 0.5em 0.75em;
+}
+
+.form-button:hover {
+	background-color: #e6e6e6;
+	border-color: #adadad;
+}
